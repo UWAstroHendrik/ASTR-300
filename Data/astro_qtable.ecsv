@@ -1,0 +1,32 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: Name, datatype: string}
+# - {name: Semi_Major_AU, datatype: float64}
+# - {name: Eccentricity, datatype: float64}
+# - {name: Abs_Mag, datatype: float64}
+# - {name: Albedo, datatype: float64}
+# - {name: Diameter, unit: km, datatype: float64}
+# - {name: Mass, unit: kg, datatype: float64}
+# - {name: Number of Weapons, datatype: float64}
+# meta: !!omap
+# - __serialized_columns__:
+#     Diameter:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: km}
+#       value: !astropy.table.SerializedColumn {name: Diameter}
+#     Mass:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: kg}
+#       value: !astropy.table.SerializedColumn {name: Mass}
+#     Number of Weapons:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: ''}
+#       value: !astropy.table.SerializedColumn {name: Number of Weapons}
+# schema: astropy-2.0
+Name Semi_Major_AU Eccentricity Abs_Mag Albedo Diameter Mass "Number of Weapons"
+Khufu 0.989537560450789 0.4685174247283059 18.3 0.21 0.6344761967444102 401204575971.2419 4.861016663911408
+Orpheus 1.209662179045708 0.3227518287938224 19.03 0.357 0.347688937525904 66022580639.14006 0.2402175904745984
+Zephyr 1.961922094181047 0.4920120116291148 15.7 0.199 2.158233566515278 15791202589205.992 2213.8217793738318
+Cuno 1.982718743264263 0.6342867024321133 14.1 0.097 6.458610790185055 423191775134435.0 531307.5789484596
+Dionysus 2.19861623099639 0.5415435918949166 16.4 0.16 1.7436727866798702 8327503921458.565 762.0358269211143

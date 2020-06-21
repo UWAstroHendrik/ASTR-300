@@ -1,0 +1,24 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: Name, datatype: string}
+# - {name: Semi_Major_AU, unit: AU, datatype: float64}
+# - {name: Eccentricity, datatype: float64}
+# - {name: Perihelion, unit: AU, datatype: float64, format: .2f}
+# meta: !!omap
+# - __serialized_columns__:
+#     Perihelion:
+#       __class__: astropy.units.quantity.Quantity
+#       __info__: {format: .2f}
+#       unit: &id001 !astropy.units.Unit {unit: AU}
+#       value: !astropy.table.SerializedColumn {name: Perihelion}
+#     Semi_Major_AU:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: *id001
+#       value: !astropy.table.SerializedColumn {name: Semi_Major_AU}
+# schema: astropy-2.0
+Name Semi_Major_AU Eccentricity Perihelion
+4P/Faye 3.83815915788662 0.5696175496849397 1.65
+3D/Biela 3.53465808340135 0.751299 0.88
+1P/Halley 17.8341442925537 0.967142908462304 0.59
+2P/Encke 2.215141293583404 0.8483360282890077 0.34

@@ -1,0 +1,131 @@
+    1  ssh -XY venterh@astrolab14.astro.washington.edu
+    2  ssh -XY venterh@astrolab14.astro.washington.edu
+    3  ls
+    4  ssh -XY venterh@astrolab14.astro.washington.edu
+    5  ssh ~XY venterh@astrolab14.astro.washington.edu
+    6  ssh -XY venterh@astrolab14.astro.washington.edu
+    7  ssh -XY venterh@astrolab16.astro.washington.edu
+    8  ssh -XY venterh@astrolab16.astro.washington.edu
+    9  ssh -XY venterh@astrolab14.astro.washington.edu
+   10  ssh -XY venterh@astrolab16.astro.washington.edu
+   11  ssh -XY venterh@astrolab16.astro.washington.edy
+   12  ssh -XY venterh@astrolab16.astro.washington.edu
+   13  ls
+   14  ssh -XY venterh@astrolab16.astro.washington.edu
+   15  -ssh XY venterh@astrolab16.astro.washington.edu
+   16  ssh -XY venterh@astrolab16.astro.washington.edu
+   17  pip update mathplotlib
+   18  ssh -XY venterh@astrolab16.astro.washington.edu
+   19  ssh -XY venterh@astrolab.astro.washington.edu
+   20  ssh -XY venterh@astrolab18.astro.washington.edu
+   21  ssh XY- venterh@astrolab16.astro.washington.edu
+   22  ssh XY- venterh@astrolab18.astro.washington.edy
+   23  ssh =XY venterh@astrolab16.astro.washington.edu
+   24  ssh -XY venterh@astrolab16.astro.washington.edu
+   25  whoami
+   26  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   27  sh Miniconda3-latest.Linux-x86_64.sh
+   28  sh Miniconda3-latest-Linux-x86_64.sh
+   29  conda --version
+   30  conda config -- add channels astropy
+   31  conda config --add channels astropy
+   32  conda config --add channels tobyrsmith
+   33  conda config --append channels conda-forge
+   34  conda install uwastro300 astroplan nb_black
+   35  conda update -all
+   36  conda update --all
+   37  conda clean --tarballs --packages
+   38  git --version
+   39  ls /mnt/c/Users/
+   40  cd
+   41  ln -sf /mnt/c/Users/Hendrik/Documents/ Documents
+   42  cd Documents
+   43  git clone https://github.com/UWashington-Astro300/Astro300-W20.git
+   44  cd
+   45  ln -sf /mnt/c/Users/Hendrik/Documents/Astro300-W20/Astro300-W20
+   46  LS
+   47  ls
+   48  cd Astro300-W20
+   49  ls Astro300-W20
+   50  cd
+   51  ls
+   52  cd Documents
+   53  ls
+   54  cd
+   55  ls
+   56  cd Astro300-W20
+   57  LS
+   58  ls
+   59  ls -la
+   60  rm Astro300-W20 
+   61  ln -sf /mnt/c/Users/Hendrik/Documents/Astro300-W20/ Astro300-W20
+   62  cd Astro300-W20
+   63  git pull
+   64  pwd
+   65  cd Data
+   66  pwd
+   67  ls
+   68  .
+   69  . a
+   70  ls .
+   71  ls ..
+   72  ls Week0
+   73  ls -R
+   74  ls -l
+   75  cd Week0/
+   76  pwd
+   77  cp A/a_file .
+   78  ls
+   79  mv a_file FILE
+   80  ls
+   81  rm FILE
+   82  ls
+   83  cp ../Jabber.txt .
+   84  ls
+   85  cat Jabber.txt 
+   86  history
+   87  git pull
+   88  cd
+   89  ls
+   90  cd Astro300-W20
+   91  cd Data
+   92  ls
+   93  nl Jabber.txt
+   94  nl -ba Jabber.txt
+   95  cat BrightStars.csv 
+   96  head BrightStars.csv
+   97  tail BrightStars.csv
+   98  head -20 BrightStars.csv
+   99  tail -20 BrightStars.csv
+  100  head -23 BrightStars.csv > 10Bright.csv
+  101  ls
+  102  wc 10Bright.csv
+  103  tail -11 BrightStars.csv >> 10Bright.csv 
+  104  wc 10Bright.csv
+  105  cat 10Bright.csv | grep 'e'
+  106  cat 10Bright.csv | grep 'e' | wc
+  107  cat 10Bright.csv | grep -v '^\#' | grep 'e'
+  108  cat 10Bright.csv | grep -v '^\#' | sort -t ',' -k 2
+  109  cat 10Bright.csv | grep -v '^\#' | sort -t ',' -k 1
+  110  cat 10Bright.csv | grep -v '^\#' | sort -t ',' -g
+  111  cat 10Bright.csv | grep -v '^\#' | sort -t ',' -g -k 1
+  112  cat 10Bright.csv | grep -v '^\#' | sort -t ',' -R
+  113  cat 10Bright.csv | grep -v '^\#' | awk -F, '{print $2}'
+  114  cat 10Bright.csv | grep -v '^\#' | awk -F, '{print $0}'
+  115  cat 10Bright.csv | grep -v '^\#' | awk -F, '{print $5,$1}'
+  116  cat 10Bright.csv | grep -v '^\#' | awk -F,'{OFS=","}{print $5,$1}'
+  117  cat 10Bright.csv | grep -v '^\#' | awk -F,'{if ($4 > 0.0) print $0}'
+  118  cat 10Bright.csv | grep -v '^\#' | awk -F, '{if $4 > 0.0) print $0}'
+  119  cat 10Bright.csv | grep -v '^\#' | awk -F, '{if ($4 > 0.0) print $0}'
+  120  cat 10Bright.csv | grep -v '^\#' | awk -F, '{if ($5 > 0.0 && $5 < 1.0) print $0}'
+  121  cat 10Bright.csv | grep -v '^\#' | awk -F, '{if ($2~/A/) print $0}'
+  122* 
+  123  cat Constellations.csv | grep -v '^\#' | awk -F, '{if ($4 > 47.5) print $0}'
+  124  cat Constellations.csv | grep -v '^\#' | awk -F, '{if ($4 >= 47.5) print $0}'
+  125  cat Constellations.csv | grep -v '^\#' | awk -F, '{if ($4 >= 47.6) print $0}'
+  126  cat Constellations.csv | grep -v '^\#' | awk -F, '{if ($4 >= 39.9 && $4 <= 42.9) | awk -F, {if ($3 >= 11.5 && $3 <= 12.5) print$0}'
+  127  cat Constellations.csv | grep -v '^\#' | awk -F, '{if ($4 >= 39.9 && $4 <= 42.9) | awk -F,  '{if ($3 >= 11.5 && $3 <= 12.5) print$0}'
+  128  cat Constellations.csv | grep -v '^\#' | awk -F, '{if ($4 >= 39.9 && $4 <= 42.9) print$0' | awk -F,  '{if ($3 >= 11.5 && $3 <= 12.5) print$0}'  
+  129  cat Constellations.csv | grep -v '^\#' | awk -F, '{if ($4 >= 35 && $4 <= 55 && $3>=10 && $3<=15) print $0}'
+  130  history
+  131  history > History.txt
